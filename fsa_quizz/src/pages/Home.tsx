@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import QuizCard from '../shared/components/QuizCard';
+import QuizHero from '../../assets/images/quiz-bg-01.jpeg';
 // Call api here later
 const fetchQuizData = async () => {
   return [
@@ -48,7 +49,7 @@ const Home: React.FC = () => {
           {/* Right Image */}
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <img
-              src='../assets/images/quiz-bg-01.jpeg' // Replace with your actual image path
+              src='../../assets/quiz-bg-01.jpeg'
               alt="Quiz Hero"
               className="rounded-lg max-w-full"
             />

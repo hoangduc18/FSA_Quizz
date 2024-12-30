@@ -33,12 +33,12 @@ const About: React.FC = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section className="py-12">
+            <section className="py-8">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
                     {/* Left Content */}
                     <div className="md:w-1/2 text-center md:text-left">
                         <div className="flex items-center space-x-2">
-                            <img src='../assets/logo.ico' alt="Logo" className="h-8 w-8" />
+                            <img src='../../assets/logo.ico' alt="Logo" className="h-8 w-8" />
                             <h3 className="text-lg text-black font-bold">Quizzes</h3>
                         </div>
                         <p className="text-lg text-gray-600 mb-6">
@@ -56,15 +56,15 @@ const About: React.FC = () => {
                     {/* Right Image */}
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
                         <img
-                            src='../assets/quiz-bg-01.jpeg' // Replace with your actual image path
+                            src='../../assets/quiz-bg-01.jpeg'
                             alt="Quiz Hero"
                             className="rounded-lg max-w-full"
                         />
                     </div>
                 </div>
             </section>
-            <section className="py-12">
-                <h2 className="text-center text-3xl font-bold mb-6">QUIZZES</h2>
+            <section className="py-8">
+                <h2 className="text-center text-3xl font-bold mb-6">Our Team</h2>
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                     {teamData?.map((quiz: any, index: any) => (
                         <TeamCard
